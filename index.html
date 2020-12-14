@@ -5,7 +5,8 @@
   <title>Skydive Salt Lake</title>
   <meta charset="utf-8">
  
-  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no"">
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit="yes">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -15,19 +16,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awes
 ome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet"> 
 <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
-	
+
+  }  
 	<style>	
-	
- /*CSS*/
- body{
-     position:fixed
-     width:100%;
-     height:100%;
-     overflow-x: hidden;
-												       
- }
+
+
+html, body {width: auto!important; overflow-x: hidden!important} 
+
 
 
 
@@ -61,8 +58,8 @@ ome/4.7.0/css/font-awesome.min.css">
   }
   h2 {
     font-size: 70;
-    text-transform: uppercase;
-    color: #5c95f8;
+    text-transform:;
+    color: #22277A;
     font-weight: 450;
     margin-bottom: 30px;
 	  
@@ -85,10 +82,10 @@ ome/4.7.0/css/font-awesome.min.css">
     margin-bottom: 30px;
 	text-align: center;
   }  
-    h6 {
+     h6 {
     font-size: 60px;
     line-height: 0.75em;
-    color: #5c95f8;
+    color: #22277A;
     font-family: 'Allura';font-size: 45px;;
     font-weight: 800;
     margin-bottom: 30px;
@@ -97,7 +94,7 @@ ome/4.7.0/css/font-awesome.min.css">
 	
   }  
    h7{
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1.375em;
     color: #5c95f8;
     font-weight: 1200;
@@ -224,13 +221,39 @@ ome/4.7.0/css/font-awesome.min.css">
     margin-bottom: 20px;
     color: #FFFFFF;
   }
- 
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
     100% {
       opacity: 1;
       transform: translateY(0%);
     }
-  }
+    // Medium devices (tablets, 768px and up)
 
+@media (min-width: 768px) {
+
+#wrapper {width:90%;  margin: 0 auto; }
+
+#content {width:70%; float:left; }
+
+#sidebar {width:30%; float:right; }
+
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
     100% {
       opacity: 1;
       -webkit-transform: translateY(0%);
@@ -245,16 +268,6 @@ ome/4.7.0/css/font-awesome.min.css">
       margin-bottom: 35px;
     }
   }
-												       // Medium devices (tablets, 768px and up)
-
-@media (min-width: 768px) {
-
-#wrapper {width:90%;  margin: 0 auto; }
-
-#content {width:70%; float:left; }
-
-#sidebar {width:30%; float:right; }
-
   @media screen and (max-width: 480px) {
     .logo {
       font-size: 150px;
@@ -270,11 +283,15 @@ ome/4.7.0/css/font-awesome.min.css">
     color: #41e8d3;
     font-size: 60px;
   }
+
+ ul {
+    list-style-type: none;
+}
+ body 
 	  
   </style>
 </head>
-<body>												       
-<body id="myPage" data-spy="" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -302,13 +319,13 @@ ome/4.7.0/css/font-awesome.min.css">
 	
   </div>
 </nav>
-
+<body>
 <div class="jumbotron text-center">
 
- <img src="https://raw.githubusercontent.com/jenwalker729/Skydive-Pat/main/tandem%20feature.JPG" alt="Skydivers in Salt Lake Valley" class="responsive" width="100%" height="100%">
-  <h2>Skydive<span style="color: #464646"> The North 40 </span></h2> 
+ <img src="tandem feature.JPG" alt="Skydivers in Salt Lake Valley" class="responsive" width="100%" height="100%">
+  <h2><span style="color: #00ff00; font-size:55px"<b>Skydive</b></span><span style="color: #464646"> the</span><span style="color: #464646;font-size:35px"</span> NORTH <span style="color: #22277A; font-size:65px" >40 </span></h2> 
    <h6>Salt Lake Valley</h6> 
-  <p>We specialize in tandem skydiving</p> 
+  <p><span style="color: #464646">We specialize in tandem skydiving</span></p> 
  <button type="button" class="btn btn-primary" >Book Now</button>
 <button type="button" class="btn btn-success">Gift Certificates</button>
 </div>
@@ -320,11 +337,11 @@ ome/4.7.0/css/font-awesome.min.css">
       <h7>We service Utah's <span style="color: #464646">Wasatch Front,</span> from  <span style="color: #464646">Salt Lake City</span> to <span style="color: #464646">Provo</span> & beyond!</h7><br>
       <p>This is a paragraph about why Skydive Eagle Mountain is the best option for first time skydivers. What specifically makes Skydive Eagle Mountain have the highest safety standards? Why would skydiving with you be fun? *reviews show that people want to have "fun" and enjoy having "full attention" from the instructor. </p
      
-	    <p>Event Planners <a href="Demos!.html">Learn about Demos</a> to make your event unforgettable</p>
+	    <p>Event Planners, <a href="Demos!.html">Learn about Demos</a> to make your event unforgettable</p>
     </div>
 
     <div class="col-sm-4">
-      <span class=""><img src="https://raw.githubusercontent.com/jenwalker729/Skydive-Pat/main/pat%20%26%20fish.JPG" alt="DEMOS" style="width:100%;"></span>
+      <span class=""><img src="pat & fish.JPG" alt="DEMOS" style="width:100%;"></span>
 </div>
 
 
@@ -337,7 +354,16 @@ ome/4.7.0/css/font-awesome.min.css">
     <div class="col-sm-8">
 
 	   <h2>Tandem Skydiving</h2>
-	<p> Why would skydiving with you be fun? *reviews show that people want to have "fun" and enjoy having "full attention" from the instructor.</p>
+	<p> Why would skydiving with you be fun? What’s Included in the tandem skydive exerience?
+A highly experienced, licensed tandem skydiving instructor to personally guide you through the entire experience. You will be safely attached to your instructor and your parachute via a FAA TSO specifications 4 point harness.
+
+uding 
+    A brief training session, to learn about the procedures of the skydive, about your responsibilities as a tandem student and about what you can expect during and from the experience
+    The use of all the skydiving equipment necessary for your jump (i.e. your harness, a jumpsuit, a pair of goggles)
+   
+    Approximately 60 seconds in blissful freefall
+    About of 5-6 minutes of parachute flight *reviews show that people want to have "fun" and enjoy having "full attention" from the instructor.</p>
+A first skydive is only made once. Take video & pictures.     
       <p>Learn more about <a href="first skydive.html">Your First Skydive.</a></p>
    
     </div>
@@ -364,25 +390,16 @@ ome/4.7.0/css/font-awesome.min.css">
       </div>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+ 
 </div>
 	  <!-- Container (Pricing Section) -->
-			  
-<div id="pricing" class="container-fluid text-center"  
-<div class="container-fluid bg-grey">
-
-    <h2>Tandem Prices</h2>
- <style>
-.pricingdiv{
+    <div id="pricing" class="container-fluid text-center"  
+    <div class="container-fluid bg-grey">
+    
+        <h2>Tandem Prices</h2>
+    
+        <style>
+    .pricingdiv{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -435,23 +452,23 @@ ome/4.7.0/css/font-awesome.min.css">
         display: block;
     }
 }
-				    </style>
-				    </head>
-     <body>
- <body>
+          </style>
+          </head>
+          <body>
+            <body>
 <div class="pricingdiv">
     <ul class="theplan">
-        <li class="title"><b>Sunday-Friday</b><br /></li>
-        <li><b>$189</b></li>
+        <li class="title"><b><span style="color: #800080;">Sunday-Friday</b><br </span></li>
+        <li><b><span style="color: #000000;">$189</b></span></li>
         <li><b></b></li>
-        <li><a class="pricebutton" href="#"><span class="icon-tag"></span> Check Out</a></li>
+        <li><a class="pricebutton" href="#"><span class="icon-tag";"color: #22277A;"></span>Make a Reservation</a></li>
     </ul>
     <ul class="theplan">
-        <li class="title"><b>Saturday</b><br /></li>
-        <li><b>$220</b></li>
+        <li class="title"><b><span style="color: #00ff00;">Saturday</b><br</span></li>
+        <li><b><span style="color: #000000;">$220</b></span></li>
         <li><b></b> </li>
       
-        <li><a class="pricebutton" href="#"><span class="icon-tag"></span> Check Out</a></li>
+        <li><a class="pricebutton" href="#"><span class="icon-tag";"color: #22277A;"></span>Make a Reservation</a></li>
     </ul>
    
 </div>
@@ -460,23 +477,22 @@ ome/4.7.0/css/font-awesome.min.css">
               
 <div class="pricingdiv">
     <ul class="theplan">
-        <li class="title"><b>Pictures</b><br /></li>
-        <li><b>$79</b></li>
+        <li class="title"><b><span style="color: #22277A;">Pictures</b><br </span></li>
+        <li><b><span style="color: #000000;">$79</b></span></li>
         <li><b></b></li>
-        <li><a class="pricebutton" href="#"><span class="icon-tag"></span> Check Out</a></li>
+        <li><a class="pricebutton" href="#"><span class="icon-tag"; "color: #22277A;"></span>Add to Cart</a></li>
     </ul>
     <ul class="theplan">
-        <li class="title"><b>Video</b><br /></li>
-        <li><b>$99</b></li>
+        <li class="title"><b><span style="color: #22277A;">Video</b><br </span></li>
+        <li><b><span style="color: #000000;">$99</b></span><li>
         <li><b></b> </li>
-        
-        <li><a class="pricebutton" href="#"><span class="icon-tag"></span> Check Out</a></li>
+        <li><a class="pricebutton" href="#"><span class="icon-tag";"color: #22277A;"></span>Add to Cart</a></li>
     </ul>
     <ul class="theplan">
-        <li class="title"><b>Pictures & Videos </b><br /></li>
-        <li class="ethighlight"><b>$149</b></li>
+        <li class="title"><b><span style="color: #00ff00;">Pictures & Videos </b><br </span></li>
+        <li class="ethighlight"><b><span style="color: #000000;">$149</b></span></li>
       
-        <li><a class="pricebutton" href=""><span class="icon-tag"></span> Check Out</a></li>
+        <li><a class="pricebutton" href=""><span class="icon-tag"; "color:  #22277A;"></span>Add to Cart</a></li>
     </ul>
 </div>
               </div>
@@ -484,11 +500,14 @@ ome/4.7.0/css/font-awesome.min.css">
           
       </body>
 </div>
-              </div>
-              
-
-
  
+</div>
+  
+</div>
+
+  
+
+
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
  <h2 class="text-center">CONTACT US</h2>
@@ -500,9 +519,8 @@ ome/4.7.0/css/font-awesome.min.css">
 <a href="directions.html">Directions</a>
 <address>
 Visit us at:<br>
-2050 N 300 W<br>
-Spansh Fork, UT<br>
-84660	<br>		 
+7974 Six-Mile Cuttoff Rd.<br>
+Eagle Mountain, UT<br>
 USA
 </address>
 
@@ -568,3 +586,5 @@ $(document).ready(function(){
 
 </body>
 </html>
+
+   
